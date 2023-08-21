@@ -75,3 +75,21 @@ const pContent = document.querySelectorAll(".top-content .text-content p");
 
 pContent[0].textContent = siteContent["ana-içerik"]["özellikler-içerik"];
 pContent[1].textContent = siteContent["ana-içerik"]["hakkımızda-içerik"];
+
+document
+  .getElementById("middle-img")
+  .setAttribute("src", siteContent.images["accent-img"]);
+
+const name2Content = document.querySelectorAll(
+  ".bottom-content .text-content h4"
+);
+
+name2Content[0].textContent = siteContent["ana-içerik"]["servisler-h4"];
+name2Content[1].textContent = siteContent["ana-içerik"]["ürünler-h4"];
+name2Content[2].textContent = siteContent["ana-içerik"]["vizyon-h4"];
+
+const bContent = document.querySelectorAll(".bottom-content .text-content p");
+
+bContent[0].textContent = siteContent["ana-içerik"]["servisler-içeriği"];
+bContent[1].textContent = siteContent["ana-içerik"]["ürünler-içeriği"];
+bContent[2].textContent = siteContent["ana-içerik"]["vizyon-içeriği"];
