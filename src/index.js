@@ -93,3 +93,17 @@ const bContent = document.querySelectorAll(".bottom-content .text-content p");
 bContent[0].textContent = siteContent["ana-içerik"]["servisler-içeriği"];
 bContent[1].textContent = siteContent["ana-içerik"]["ürünler-içeriği"];
 bContent[2].textContent = siteContent["ana-içerik"]["vizyon-içeriği"];
+
+document.querySelector(".contact h4").textContent =
+  siteContent.iletisim["iletişim-h4"];
+
+const iletisimContent = document.querySelectorAll(".contact p");
+
+iletisimContent[0].textContent = siteContent.iletisim.adres;
+iletisimContent[1].textContent = siteContent.iletisim.telefon;
+iletisimContent[2].textContent = siteContent.iletisim.email;
+
+const footer = document.querySelector("footer a");
+
+footer.textContent = siteContent.footer.copyright;
+footer.setAttribute("class", "bold");
